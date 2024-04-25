@@ -1,115 +1,167 @@
 .container-perfil {
   display: flex;
-  height: 100vh;
+  height: auto;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 0.5rem;
   background-image: url("/../../../../assets/fitness-perfil.jpg");
   background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
   background-position: center; /* Centra la imagen dentro del contenedor */
   /* Otros estilos de tu contenedor */
 }
 
-
 .editar-perfil-container {
-
-  max-width: 400px;
+  max-width: 26rem;
   width: 100%;
-  background: rgb(226, 126, 126);
-  padding: 20px 20px ;
+  /* background: #212529; */
+  /* color: #FAF4F4; */
+  padding: 20px 20px;
   border-radius: 1rem;
-  font-size: 16px; 
- 
+  /* font-size: 16px; */
 }
-
-.editar-perfil-container .id{
-  font-size: 25px;
-  color:black;
-  text-align: center;
-}
-
-
-
-.editar-perfil-container .user{
-  font-size: 25px;
-  color:black
-}
-
 
 .editar-perfil-container .tittle {
-   font-size: 30px;
+  /* font-size: 30px; */
   font-weight: 500;
-  font-weight:bold;
- text-align: center;
-  
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 0.5rem;
 }
 
-.editar-perfil-container .tittle::before {
-  
+/* .editar-perfil-container .tittle::before {
   position: absolute;
   left: 0;
   bottom: 0;
   height: 3px;
-  width: 30px;
+  width: 1.875rem;
   background: linear-gradient(135deg, #bfe2bf, rgb(223, 124, 124));
   justify-content: left;
+} */
+
+.editar-perfil-container .id {
+  /* font-size: 25px;
+  color:black;
+  text-align: center; */
+  display: none;
 }
 
-form .user-details{
-  display:inline;
+.editar-perfil-container .user {
+  /* font-size: 1.5rem; */
+}
+
+.editar-perfil-container .user p {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+/* form .user-details {
+  display: inline;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+} */
 
-form label{
-	width: 100px;
-	font-weight:bold;
-	display:inline-block;
-}
+/* form label {
+  width: 100px;
+  font-weight: bold;
+  display: inline-block;
+} */
 
-.user-details .input-box{
+/* .user-details .input-box {
   margin: 20px 0 12px 0;
-width: calc(100%/2 -20px);
-}
+  width: calc(100% / 2 -20px);
+} */
 
-.user-details .input-box input {
+/* .user-details .input-box input {
   height: 35px;
-  width: 100%; /* Amplía el ancho al 100% */
+  width: 100%; /* Amplía el ancho al 100% 
   outline: none;
   border-radius: 5px;
   border: 1px solid #ccc;
   padding-left: 15px;
   font-size: 12px;
-}
+}*/
 
-
-.editar-perfil-container .button {
+/* .editar-perfil-container .button {
   width: 110px;
   top: 90px;
   left: 120px;
   cursor: pointer;
-}
+} */
 
-.menu-izquierdo {
+/* .menu-izquierdo {
   background-color: #f1f1f1;
   padding: 10px;
-}
+} */
 
-.menu-izquierdo ul {
+/* .menu-izquierdo ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
+} */
 
-.menu-izquierdo li {
+/* .menu-izquierdo li {
   cursor: pointer;
   padding: 5px;
-}
+} */
 
-.menu-izquierdo li:hover {
+/* .menu-izquierdo li:hover {
   background-color: #eaeaea;
-}
+} */
 
-.contenido-central {
+/* .contenido-central {
   padding: 10px;
+} */
+
+@media (min-width: 375px) {
+
+  .editar-perfil-container {
+    max-width: 25rem;
+    width: 100%;
+    /* background: #212529; */
+    background: #dc3545;
+    /* color: #FAF4F4; */
+    color: #fff;
+    padding: 1.25rem 1.25rem;
+    margin: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .user-profile-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+  }
+
+  .user-profile-image img {
+    width: 25%;
+    height: auto;
+  }
+
+  .user p > span {
+    display: block;
+    color: #cab8b8;
+  }
+
+  .btn {
+    color: #fff;
+  }
+
+  .user-details label {
+    display: block;
+  }
+
+  .user-details input {
+    width: 100%;
+    margin: 0.5rem 0 0.5rem 0;
+    outline: none;
+    border-radius: 0.313rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+
+  .user-details .btn {
+    margin-top: 0.5rem;
+  }
 }
