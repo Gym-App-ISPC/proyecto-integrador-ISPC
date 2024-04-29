@@ -13,11 +13,8 @@
 .editar-perfil-container {
   max-width: 26rem;
   width: 100%;
-  /* background: #212529; */
-  /* color: #FAF4F4; */
   padding: 20px 20px;
   border-radius: 1rem;
-  /* font-size: 16px; */
 }
 
 .editar-perfil-container .tittle {
@@ -28,97 +25,19 @@
   padding-bottom: 0.5rem;
 }
 
-/* .editar-perfil-container .tittle::before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 1.875rem;
-  background: linear-gradient(135deg, #bfe2bf, rgb(223, 124, 124));
-  justify-content: left;
-} */
-
 .editar-perfil-container .id {
-  /* font-size: 25px;
-  color:black;
-  text-align: center; */
   display: none;
-}
-
-.editar-perfil-container .user {
-  /* font-size: 1.5rem; */
 }
 
 .editar-perfil-container .user p {
   margin: 0.5rem 0 0.5rem 0;
 }
 
-/* form .user-details {
-  display: inline;
-  flex-wrap: wrap;
-  justify-content: space-between;
-} */
-
-/* form label {
-  width: 100px;
-  font-weight: bold;
-  display: inline-block;
-} */
-
-/* .user-details .input-box {
-  margin: 20px 0 12px 0;
-  width: calc(100% / 2 -20px);
-} */
-
-/* .user-details .input-box input {
-  height: 35px;
-  width: 100%; /* Amplía el ancho al 100% 
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  padding-left: 15px;
-  font-size: 12px;
-}*/
-
-/* .editar-perfil-container .button {
-  width: 110px;
-  top: 90px;
-  left: 120px;
-  cursor: pointer;
-} */
-
-/* .menu-izquierdo {
-  background-color: #f1f1f1;
-  padding: 10px;
-} */
-
-/* .menu-izquierdo ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-} */
-
-/* .menu-izquierdo li {
-  cursor: pointer;
-  padding: 5px;
-} */
-
-/* .menu-izquierdo li:hover {
-  background-color: #eaeaea;
-} */
-
-/* .contenido-central {
-  padding: 10px;
-} */
-
 @media (min-width: 375px) {
-
   .editar-perfil-container {
     max-width: 25rem;
     width: 100%;
-    /* background: #212529; */
     background: #dc3545;
-    /* color: #FAF4F4; */
     color: #fff;
     padding: 1.25rem 1.25rem;
     margin: 0.5rem 0.5rem;
@@ -148,17 +67,22 @@
     color: #fff;
   }
 
+  .user-details {
+    margin: 0;
+  }
+
   .user-details label {
-    display: block;
+    margin: 0;
   }
 
   .user-details input {
-    width: 100%;
     margin: 0.5rem 0 0.5rem 0;
     outline: none;
-    border-radius: 0.313rem;
-    border: 1px solid #ccc;
-    font-size: 1rem;
+  }
+
+  .form-control:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
   }
 
   .user-details .btn {
