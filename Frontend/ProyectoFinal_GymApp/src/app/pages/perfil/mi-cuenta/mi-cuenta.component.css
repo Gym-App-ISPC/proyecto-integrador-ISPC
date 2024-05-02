@@ -7,7 +7,6 @@
   background-image: url("/../../../../assets/fitness-perfil.jpg");
   background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
   background-position: center; /* Centra la imagen dentro del contenedor */
-  /* Otros estilos de tu contenedor */
 }
 
 .editar-perfil-container {
@@ -18,7 +17,6 @@
 }
 
 .editar-perfil-container .tittle {
-  /* font-size: 30px; */
   font-weight: 500;
   font-weight: bold;
   text-align: center;
